@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4208/4208483.png"></link>
+<link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4208/4208483.png">
+</link>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sufiyan's Portfolio</title>
-    
-    
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lato&family=Dancing+Script&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Lato&family=Dancing+Script&display=swap"
+        rel="stylesheet">
 
     <style>
-        
         * {
             margin: 0;
             padding: 0;
@@ -25,11 +28,11 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #1a1a2e; 
-            color: #e0e0e0; 
+            background-color: #1a1a2e;
+            color: #e0e0e0;
             line-height: 1.6;
         }
-        
+
         .container {
             max-width: 960px;
             margin: auto;
@@ -37,7 +40,7 @@
         }
 
         header {
-            background: #16213e; 
+            background: #16213e;
             padding: 1rem 0;
             position: sticky;
             top: 0;
@@ -47,7 +50,7 @@
 
         .main-nav {
             display: flex;
-            justify-content: center; 
+            justify-content: center;
             align-items: center;
         }
 
@@ -57,22 +60,22 @@
         }
 
         .nav-links li {
-            margin: 0 15px; 
+            margin: 0 15px;
         }
 
         .nav-links a {
             color: #e0e0e0;
             text-decoration: none;
-            transition: color 0.3s ease; 
+            transition: color 0.3s ease;
         }
 
         .nav-links a:hover {
-            color: #87ceeb; 
+            color: #87ceeb;
         }
-        
+
         .section {
-            padding: 40px 0; 
-            border-top: 3px solid rgba(255, 255, 255, 0.15); 
+            padding: 40px 0;
+            border-top: 3px solid rgba(255, 255, 255, 0.15);
         }
 
         .section-title {
@@ -80,46 +83,46 @@
             margin-bottom: 30px;
             font-size: 2rem;
             color: #e94560;
-            text-transform: uppercase; 
+            text-transform: uppercase;
         }
 
         .project-card p,
         #contact p {
             font-family: 'Lato', sans-serif;
         }
-        
+
         #about p {
             font-family: 'Dancing Script', cursive;
-            font-size: 1.2rem; 
+            font-size: 1.2rem;
         }
-        
+
         #about .section-title {
-            color: #87ceeb; 
+            color: #87ceeb;
         }
-        
+
         #projects .section-title {
-            color: #90ee90; 
+            color: #90ee90;
         }
-        
+
         #contact .section-title {
-            color: #ffc0cb; 
+            color: #ffc0cb;
         }
-        
+
         #hero {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh; 
+            height: 100vh;
             text-align: center;
         }
 
         .profile-pic {
             width: 180px;
             height: 180px;
-            border-radius: 50%; 
+            border-radius: 50%;
             border: 4px solid #fff;
-            object-fit: cover; 
+            object-fit: cover;
             margin-bottom: 20px;
         }
 
@@ -140,88 +143,92 @@
             text-decoration: none;
             border-radius: 5px;
             font-weight: 600;
-            border: none; 
+            border: none;
             cursor: pointer;
-            transition: transform 0.3s ease, background-color 0.3s ease; /* Simple animation! */
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            /* Simple animation! */
         }
 
         .btn:hover {
             background-color: #c6334c;
-            transform: translateY(-3px); 
+            transform: translateY(-3px);
         }
 
         .projects-grid {
             display: flex;
             flex-wrap: wrap;
-            gap: 20px; 
-            justify-content: flex-start; 
+            gap: 20px;
+            justify-content: flex-start;
         }
 
         .project-card {
             background: #16213e;
             border-radius: 8px;
             padding: 20px;
-            width: 290px; 
+            width: 290px;
             border-left: 5px solid #0f3460;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .projects-grid .project-card:nth-of-type(1) {
-            background-color: #0d4a4e; 
+            background-color: #0d4a4e;
         }
+
         .projects-grid .project-card:nth-of-type(2) {
-            background-color: #483d8b; 
+            background-color: #483d8b;
         }
+
         .projects-grid .project-card:nth-of-type(3) {
-            background-color: #ff69b4; 
+            background-color: #ff69b4;
         }
-        
+
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
 
         .project-card h3 {
-            color: #87ceeb; 
+            color: #87ceeb;
             margin-bottom: 10px;
         }
-        
+
         #contact .btn {
             background-color: #4169e1;
-            color: #fff; 
+            color: #fff;
         }
-        
+
         #contact .btn:hover {
-            background-color: #3557bd; 
+            background-color: #3557bd;
         }
-        
+
         #about p {
             text-align: left;
-             }
-        
+        }
+
         #contact p {
             max-width: 600px;
-            margin: 0 auto; 
-            text-align: left; 
+            margin: 0 auto;
+            text-align: left;
         }
-        
+
         #contact a {
             color: #e94560;
             text-decoration: none;
         }
-        
+
         footer {
             text-align: center;
             padding: 20px;
             margin-top: 40px;
             background-color: #16213e;
         }
-        
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
                 transform: translateY(20px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -231,12 +238,12 @@
         .section {
             animation: fadeIn 1s ease-out;
         }
-        
+
         @media (max-width: 768px) {
             .main-nav {
                 flex-direction: column;
             }
-            
+
             .nav-links {
                 margin-top: 15px;
             }
@@ -245,10 +252,11 @@
                 font-size: 2.5rem;
             }
         }
-
     </style>
 </head>
+
 <body>
+    <h1>This is h1</h1>
     <header>
         <div class="container">
             <nav class="main-nav">
@@ -259,11 +267,11 @@
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-        
+
     </header>
 
     <main>
-        
+
         <section id="hero">
             <div class="container">
                 <img src="myself.jpeg.jpg" alt="A picture of Sufiyan" class="profile-pic">
@@ -277,7 +285,14 @@
             <div class="container">
                 <h2 class="section-title">About Me</h2>
                 <p>
-                    I'm a 17-year-old student and a first-year undergraduate at Scaler School of Technology, Bangalore. I'm currently learning the fundamentals of web development. I'm excited by HTML, CSS, and the basics of JavaScript. I love solving problems, and this portfolio is my first big project to showcase what I've learned!
+                <p>
+                    I’m a 17-year-old first-year undergraduate at Scaler School of Technology, Bangalore.
+                    I’m currently learning the fundamentals of web development, including HTML, CSS,
+                    and JavaScript. I enjoy building small projects that solve real-life problems,
+                    especially tools related to productivity and organization. This portfolio showcases
+                    my learning journey and practical experiments.
+                </p>
+
                 </p>
             </div>
         </section>
@@ -285,25 +300,51 @@
         <section id="projects" class="section">
             <div class="container">
                 <h2 class="section-title">My Projects</h2>
+
                 <div class="projects-grid">
-                    <!--project1-->
+
+                    <!-- Project 1 -->
                     <div class="project-card">
-                        <h3>Project One: A Basic Website</h3>
-                        <p>A simple multi-page website I built for a class project. It uses basic HTML structure and CSS for styling and layout.</p>
+                        <h3>Personal Productivity Planner</h3>
+                        <p>
+                            A simple life-management web app that helps users plan daily tasks, track completion,
+                            and visualize progress. Built using vanilla JavaScript with dynamic DOM manipulation
+                            and basic state handling.
+                        </p>
+                        <p>
+                            <strong>Concepts:</strong> DOM manipulation, event handling, UI state updates,
+                            task prioritization.
+                        </p>
                     </div>
-                    <!--project2-->
+
+                    <!-- Project 2 -->
                     <div class="project-card">
-                        <h3>Project Two: CSS Art</h3>
-                        <p>This was a fun challenge where I tried to create a simple character using only CSS and div elements. It taught me a lot about positioning.</p>
+                        <h3>Basic Website</h3>
+                        <p>
+                            A multi-section responsive website built using semantic HTML and CSS.
+                            Focused on layout structuring, typography, and visual consistency.
+                        </p>
+                        <p>
+                            <strong>Concepts:</strong> HTML structure, CSS layout, responsive design.
+                        </p>
                     </div>
-                    <!-- Project3 -->
+
+                    <!-- Project 3 -->
                     <div class="project-card">
-                        <h3>Project Three: Form Page</h3>
-                        <p>I created a styled contact form. This project helped me understand how to work with different input types and labels in HTML.</p>
+                        <h3>Styled Contact Form</h3>
+                        <p>
+                            A clean and accessible contact form designed using HTML and CSS.
+                            This project helped reinforce form semantics and input handling.
+                        </p>
+                        <p>
+                            <strong>Concepts:</strong> Forms, input types, labels, styling.
+                        </p>
                     </div>
+
                 </div>
             </div>
         </section>
+
 
         <!-- Contact -->
         <section id="contact" class="section">
@@ -325,5 +366,5 @@
     </footer>
 
 </body>
-</html>
 
+</html>
